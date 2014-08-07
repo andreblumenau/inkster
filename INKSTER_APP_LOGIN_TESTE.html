@@ -5,96 +5,102 @@
 INKSTER
 </title>
 <style>
+    #title {
+        font-size: 6em;
+        font-family: Segoe Ui;
+        text-shadow: -3px -3px 0px lightseagreen;
+        text-rendering: optimizeLegibility;
+        background-color: white;
+        margin: 0px;
+        text-align: center;
+    }
 
-#title{
-font-size: 6em;
-font-family: Segoe Ui;
-text-shadow: -3px -3px 0px lightseagreen;
-text-rendering: optimizeLegibility;
-background-color:white;
-margin:0px;
-text-align: center;
-}
+    body {
+        background-color: rgb(200,50,50);
+        margin: 0px;
+    }
 
-body{
-	background-color:rgb(200,50,50);	
-	margin:0px;
-}
-
-#subtitle{
-font-family: Segoe Ui;
-/*text-shadow: -1px -1px 0px grey;*/
-font-size: 2em;
-margin:0px;
-text-align: center;
-text-rendering: optimizeLegibility;
-color: rgb(256,256,256);
-/*position:absolute;
+    #subtitle {
+        font-family: Segoe Ui;
+        /*text-shadow: -1px -1px 0px grey;*/
+        font-size: 2em;
+        margin: 0px auto;
+        text-align: center;
+        text-rendering: optimizeLegibility;
+        color: rgb(256,256,256);
+        /*position:absolute;
 top:21em;*/
+        width: 50%;
+    }
 
-width:94%;
-}
+    #divTitulos {
+        margin: 0px;
+        width: 100%;
+        top: -1em;
+        left: 0em;
+    }
 
-#divTitulos{
-	margin:0px;
-	width: 100%;
-	top: -1em;
-	left: 0em;
-}
+    .v-center {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
-.font-smoothing {
-    -webkit-font-smoothing: antialiased;
-	-webkit-font-smoothing: subpixel-antialiased;
-    -moz-osx-font-smoothing: grayscale;
-	font-smooth: always;
-	text-shadow: 0 0 1px rgba(0,0,0,0.3);
-}
+    .h-center {
+        margin: 0px auto;
+        width: 50%;
+    }
 
-html { -webkit-text-stroke: 0.25px}
+    .font-smoothing {
+        -webkit-font-smoothing: antialiased;
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-smooth: always;
+        text-shadow: 0 0 1px rgba(0,0,0,0.3);
+    }
+
+    html {
+        -webkit-text-stroke: 0.25px;
+    }
 
 
-#divLogin
-{
-font-family: Segoe UI;
-font-size: 1.4em;
-font-weight:bold;
-color:white;
-
-/* ### Magic that center the div. */
-width:50%;
-margin: 0 auto; 
-/* ### */
-}
-
+    #divLogin {
+        font-family: Segoe UI;
+        font-size: 1.4em;
+        font-weight: bold;
+        color: white;
+    }
 </style>
 </head>
 <body>
 <div id='divTitulos'>
 <h1 id='title' class="font-smoothing">INKSTER</h1>
 </div>
+<div id='content'>
+<div id='divLogin' class='h-center'>
 
-<div id='divLogin'>
-<p>
-<form action="javascript:void()" method:"post">
-<label id='usernameLabel'>User</label>
-<br>
-<input type="text" style="width:300px; height:30px;" autofocus>
-</p>
+<form action="javascript:void(0)" method:"post">
 
-<p>
-<label id='passwordLalbel'>Password</label>
-<br>
-<input type="password" style="width:300px; height:30px;" >
-</p>
-
-<p style="text-align: right;">
-<br>
-<input type="button" value='ENTER' >
-</p>
+    <p class="h-center">
+        <label id='usernameLabel'>User</label>
+        <br>
+        <input type="text" style="width:300px; height:30px;" autofocus>
+    </p>
+    
+    <p class="h-center">
+        <label id='passwordLalbel'>Password</label>
+        <br>
+        <input type="password" style="width:300px; height:30px;" >
+    </p>
+    
+    <p class="h-center" style="text-align: right;">
+        <br>
+        <input type="button" value='ENTER' >
+    </p>
 
 </form>
 </div>
-
+</div>
 <div id='phrase'>
 <h2 id='subtitle'>tatoo the world.</h2>
 </div>
