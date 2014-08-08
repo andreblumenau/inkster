@@ -86,8 +86,7 @@
 	 }
 	 
 	input[type="button"]:hover{	
-		color:black;
-		background: darkgrey;
+		cursor: pointer;
 	 }
 	 
 	 
