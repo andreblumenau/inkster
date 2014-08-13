@@ -1,7 +1,7 @@
 #title {
         font-size: 6em;
 		font-family: 'Francois One', sans-serif;
-        text-shadow: -3px -3px 0px lightseagreen;
+        /*text-shadow: -3px -3px 0px lightseagreen;*/
         text-rendering: optimizeLegibility;
         background-color: white;
         margin: 0px;
@@ -98,5 +98,5 @@
 		margin-top: 5%;
 		padding: 20px;
 		padding: 20px;
-		background:url('../images/skull.png') no-repeat fixed center
+		background:url('../images/skull.png') no-repeat center center
     }
